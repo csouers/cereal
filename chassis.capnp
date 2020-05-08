@@ -60,7 +60,7 @@ struct BodyState {
   # hvac
   hvac @15 :HVAC;
 
-  struct HVAC{
+  struct HVAC {
     interiorTemperature @0 :Float32; #Celcius
     exteriorTemperature @1 :Float32; #Celcius
     setTemperature @2 :Int8; #Celcius
@@ -79,8 +79,16 @@ struct BodyState {
   }
 
   # seats
+  frontLeftSeat @16 :Seat;
+  frontCenterSeat @17 :Seat;
+  frontRightSeat @18 :Seat;
+  middleLeftSeat @19 :Seat;
+  middleCenterSeat @20 :Seat;
+  middleRightSeat @21 :Seat;
+  rearLeftSeat @22 :Seat;
+  rearCenterSeat @23 :Seat;
+  rearRightSeat @24 :Seat;
 
-  frontLeft
   struct Seat {
     heater @0 :Bool;
   }
