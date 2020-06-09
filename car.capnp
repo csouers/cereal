@@ -109,6 +109,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     driverCameraError @101;
     wideRoadCameraError @102;
     localizerMalfunction @103;
+    clutchPressed @104;
 
     radarCanErrorDEPRECATED @15;
     radarCommIssueDEPRECATED @67;
