@@ -11,8 +11,8 @@ struct BodyState {
   # doors
   frontLeftDoor @0 :Door;
   frontRightDoor @1 :Door;
-  backLeftDoor @2 :Door;
-  backRightDoor @3 :Door;
+  rearLeftDoor @2 :Door;
+  rearRightDoor @3 :Door;
   hood @4 :Door;
   trunk @5 :Door;
   fuelDoor @6 :Door;
