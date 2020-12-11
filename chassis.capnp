@@ -5,7 +5,7 @@ using Java = import "./include/java.capnp";
 $Java.package("ai.comma.openpilot.cereal");
 $Java.outerClassname("Chassis");
 
-@0x8e2af1e708af8b8d;
+@0x7890fd0ce11d29f1;
 
 struct BodyState {
   # doors
@@ -16,6 +16,7 @@ struct BodyState {
   hood @4 :Door;
   trunk @5 :Door;
   fuelDoor @6 :Door;
+  chargePort @7 :Door;
 
   enum Door {
     unknown @0
@@ -66,7 +67,8 @@ struct BodyState {
     setTemperature @2 :Int8; #Celcius
     fanSpeed @3 :Int8;
     mode @4 :Mode;
-    recirculation @5 :Bool;
+    recirculate @5 :Bool;
+    acRequest @6 :Bool;
 
     enum Mode {
       unknown @0;
@@ -90,6 +92,8 @@ struct BodyState {
   rearRightSeat @24 :Seat;
 
   struct Seat {
-    heater @0 :Bool;
+    heater @0 :Int8;
+    seatbelt @1 :Bool;
+    occupancy @2 :Bool;
   }
 }
