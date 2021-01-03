@@ -13,6 +13,10 @@ struct BodyState {
   frontRightDoor @1 :Door;
   rearLeftDoor @2 :Door;
   rearRightDoor @3 :Door;
+  frontLeftDoorLock @0 :Lock;
+  frontRightDoorLock @1 :Lock;
+  rearLeftDoorLock @2 :Lock;
+  rearRightDoorLock @3 :Lock;
   hood @4 :Door;
   trunk @5 :Door;
   fuelDoor @6 :Door;
@@ -20,11 +24,15 @@ struct BodyState {
 
   enum Door {
     unknown @0
+    open @1
+    closed @2
+    moving @3
+  }
+
+  enum Lock {
+    unknown @0
     unlocked @1
     locked @2
-    open @3
-    moving @4
-    closed @5
   }
 
   # windows
@@ -35,11 +43,9 @@ struct BodyState {
 
   enum Window {
     unknown @0
-    unlocked @1
-    locked @2
-    open @3
-    moving @4
-    closed @5
+    open @1
+    closed @2
+    moving @3
   }
 
   # security
