@@ -22,24 +22,31 @@ struct BodyState {
   fuelDoor @6 :Door;
   chargePort @7 :Door;
 
-  enum Door {
-    unknown @0
-    open @1
-    closed @2
-    moving @3
+  struct Door {
+    @0 :State;
+    @1 :Lock;
+    
+    enum State {
+      unknown @0
+      open @1
+      closed @2
+      moving @3
+    }
+    enum Lock {
+      unknown @0
+      unlocked @1
+      locked @2
+    }
   }
 
-  enum Lock {
-    unknown @0
-    unlocked @1
-    locked @2
-  }
+
 
   # windows
   frontLeftWindow @7 :Window;
   frontRightWindow @8 :Window;
   backLeftWindow @9 :Window;
   backRightWindow @10 :Window;
+  sunroof @11 :Window;
 
   enum Window {
     unknown @0
