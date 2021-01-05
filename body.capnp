@@ -3,7 +3,7 @@ $Cxx.namespace("cereal");
 
 using Java = import "./include/java.capnp";
 $Java.package("ai.comma.openpilot.cereal");
-$Java.outerClassname("Chassis");
+$Java.outerClassname("Body");
 
 @0xb17f42ab6608e7e5;
 
