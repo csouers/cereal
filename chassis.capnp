@@ -5,7 +5,7 @@ using Java = import "./include/java.capnp";
 $Java.package("ai.comma.openpilot.cereal");
 $Java.outerClassname("Chassis");
 
-@0x7890fd0ce11d29f1;
+@0xb17f42ab6608e7e5;
 
 struct BodyState {
   # doors
