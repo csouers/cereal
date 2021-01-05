@@ -13,18 +13,14 @@ struct BodyState {
   frontRightDoor @1 :Door;
   rearLeftDoor @2 :Door;
   rearRightDoor @3 :Door;
-  frontLeftDoorLock @0 :Lock;
-  frontRightDoorLock @1 :Lock;
-  rearLeftDoorLock @2 :Lock;
-  rearRightDoorLock @3 :Lock;
   hood @4 :Door;
   trunk @5 :Door;
   fuelDoor @6 :Door;
   chargePort @7 :Door;
 
   struct Door {
-    @0 :State;
-    @1 :Lock;
+    state @0 :State;
+    lock @1 :Lock;
 
     enum State {
       unknown @0;
