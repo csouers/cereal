@@ -25,17 +25,17 @@ struct BodyState {
   struct Door {
     @0 :State;
     @1 :Lock;
-    
+
     enum State {
-      unknown @0
-      open @1
-      closed @2
-      moving @3
+      unknown @0;
+      open @1;
+      closed @2;
+      moving @3;
     }
     enum Lock {
-      unknown @0
-      unlocked @1
-      locked @2
+      unknown @0;
+      unlocked @1;
+      locked @2;
     }
   }
 
@@ -49,21 +49,21 @@ struct BodyState {
   sunroof @11 :Window;
 
   enum Window {
-    unknown @0
-    open @1
-    closed @2
-    moving @3
+    unknown @0;
+    open @1;
+    closed @2;
+    moving @3;
   }
 
   # security
   security @11 :Security;
 
   enum Security {
-    unknown @0
-    disarmed @1
-    arming @2
-    armed @3
-    warning @4
+    unknown @0;
+    disarmed @1;
+    arming @2;
+    armed @3;
+    warning @4;
   }
 
   # meter
