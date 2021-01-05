@@ -85,7 +85,7 @@ struct BodyState {
       dashboard @2;
       mix @3;
       defrost @4;
-      defrost_floor @5;
+      defrostfloor @5;
     }
   }
 
