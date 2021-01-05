@@ -38,11 +38,11 @@ struct BodyState {
 
 
   # windows
-  frontLeftWindow @7 :Window;
-  frontRightWindow @8 :Window;
-  backLeftWindow @9 :Window;
-  backRightWindow @10 :Window;
-  sunroof @11 :Window;
+  frontLeftWindow @8 :Window;
+  frontRightWindow @9 :Window;
+  backLeftWindow @10 :Window;
+  backRightWindow @11 :Window;
+  sunroof @12 :Window;
 
   enum Window {
     unknown @0;
@@ -52,7 +52,7 @@ struct BodyState {
   }
 
   # security
-  security @11 :Security;
+  security @13 :Security;
 
   enum Security {
     unknown @0;
@@ -63,12 +63,12 @@ struct BodyState {
   }
 
   # meter
-  rangeRemaining @12 :Float32;
-  fuelRemaining @13 :Float32;
-  odometer @14 :Float32;
+  rangeRemaining @14 :Float32;
+  fuelRemaining @15 :Float32;
+  odometer @16 :Float32;
 
   # hvac
-  hvac @15 :HVAC;
+  hvac @17 :HVAC;
 
   struct HVAC {
     interiorTemperature @0 :Float32; #Celcius
@@ -90,15 +90,15 @@ struct BodyState {
   }
 
   # seats
-  frontLeftSeat @16 :Seat;
-  frontCenterSeat @17 :Seat;
-  frontRightSeat @18 :Seat;
-  middleLeftSeat @19 :Seat;
-  middleCenterSeat @20 :Seat;
-  middleRightSeat @21 :Seat;
-  rearLeftSeat @22 :Seat;
-  rearCenterSeat @23 :Seat;
-  rearRightSeat @24 :Seat;
+  frontLeftSeat @18 :Seat;
+  frontCenterSeat @19 :Seat;
+  frontRightSeat @20 :Seat;
+  middleLeftSeat @21 :Seat;
+  middleCenterSeat @22 :Seat;
+  middleRightSeat @23 :Seat;
+  rearLeftSeat @24 :Seat;
+  rearCenterSeat @25 :Seat;
+  rearRightSeat @26 :Seat;
 
   struct Seat {
     heater @0 :Int8;
