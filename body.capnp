@@ -35,8 +35,6 @@ struct BodyState {
     }
   }
 
-
-
   # windows
   frontLeftWindow @8 :Window;
   frontRightWindow @9 :Window;
@@ -104,5 +102,9 @@ struct BodyState {
     heater @0 :Int8;
     seatbelt @1 :Bool;
     occupancy @2 :Bool;
+  }
+
+  leftBlindSpotWarning @27 :Bool;
+  rightBlindSpotWarning @28 :Bool;
   }
 }
