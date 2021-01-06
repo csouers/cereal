@@ -106,5 +106,5 @@ struct BodyState {
 
   leftBlindSpotWarning @27 :Bool;
   rightBlindSpotWarning @28 :Bool;
-  }
+
 }
