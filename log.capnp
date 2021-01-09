@@ -7,6 +7,7 @@ $Java.outerClassname("Log");
 
 using Car = import "car.capnp";
 using Legacy = import "legacy.capnp";
+using Body = import "body.capnp";
 
 @0xf3b1f17e25a4285b;
 
@@ -1318,6 +1319,7 @@ struct Event {
     logMessage @18 :Text;
 
 
+    bodyState @79 :Body.BodyState;
     # *********** debug ***********
     testJoystick @52 :Joystick;
 
