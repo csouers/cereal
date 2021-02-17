@@ -64,6 +64,8 @@ services = {
   "wideRoadCameraState": (True, 20., 1),
   "modelV2": (True, 20., 20),
   "managerState": (True, 2., 1),
+  "bodyState": (True, 20.),
+
 
   "testModel": (False, 0.),
   "testLiveLocation": (False, 0.),
